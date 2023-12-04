@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "653c19a205c3cf7f4d11cc5d"
+  },
+  "login": "zaza",
+  "email": "zaza@zaza",
+  "password": "$2b$10$tf51w.XAemPkfoHv5yruoefgqnQNMeEklJRW0yuXqf4i1yWc.QPU.",
+  "role": "Admin",
+  "createdAt": {
+    "$date": "2023-10-27T20:12:18.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-27T20:12:18.539Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65649023bc79107be5df487a"
+  },
+  "login": "zozo",
+  "email": "zozo@zozo",
+  "password": "$2b$10$CLyT3YpOHus5VAddkj4x3eOMxCCrhZKx66qkDeiXfVWICIafB0BAC",
+  "role": "User",
+  "createdAt": {
+    "$date": "2023-11-27T12:48:35.263Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-27T12:48:35.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6565f0de1abd1921e3485002"
+  },
+  "login": "popo",
+  "email": "popo@popo",
+  "password": "$2b$10$IweB7lcDsGnO2Rgrj6UO8uR.JgtLGVwQatR4cKDli4gaClnSHROE2",
+  "role": "User",
+  "createdAt": {
+    "$date": "2023-11-28T13:53:34.867Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-28T13:53:34.867Z"
+  },
+  "__v": 0
+}]

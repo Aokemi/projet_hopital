@@ -1,0 +1,34 @@
+[
+    {
+        "_id": {
+            "$oid": "638dd11806c4447cef545434"
+        },
+        "name": "Dentaire",
+        "specialists": [],
+        "floor": "4"
+    },
+    {
+        "_id": {
+            "$oid": "638dd11806c4447cef545433"
+        },
+        "name": "Radiologie",
+        "specialists": [],
+        "floor": "3"
+    },
+    {
+        "_id": {
+            "$oid": "638dd11806c4447cef545432"
+        },
+        "name": "Dermatologie",
+        "specialists": [],
+        "floor": "2"
+    },
+    {
+        "_id": {
+            "$oid": "638dd11806c4447cef545431"
+        },
+        "name": "Médecine générale",
+        "specialists": [],
+        "floor": "1"
+    }
+]

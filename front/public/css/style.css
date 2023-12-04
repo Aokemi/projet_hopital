@@ -1,0 +1,591 @@
+/****************************
+/// GLOBAL ///
+****************************/
+:root {
+    --primary-color: #2596BE;
+    --secondary-color: #E9383F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    font-family: Nunito;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    max-width: 10%;
+}
+
+/****************************
+/// HEADER ///
+****************************/
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.6rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 3rem;
+    position: relative;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+.welcome-admin {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+nav {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+header nav a {
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:after {
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent; /* Triangle blanc vers le haut */
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+}
+
+header nav a:hover:after {
+    opacity: 1;
+    bottom: -0.3rem;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.login-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.login-button:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+/****************************
+/// PAGE HOME ///
+****************************/
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background-image: url('../img/bkg-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.text-overlay p {
+    padding: 3rem;
+}
+
+.text-overlay img.hospital-bed {
+    float: left;
+    margin-right: 3rem;
+}
+
+.text-overlay img.hospital-front {
+    float: right;
+    margin-left: 3rem;
+}
+
+/****************************
+/// PAGE LOGIN/REGISTER ///
+****************************/
+
+.login-container,
+.register-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+}
+
+.login-title,
+.register-title {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/****************************
+/// PAGE MEDIA ///
+****************************/
+
+.news {
+    align-items: center;
+    max-width: 50rem;
+    margin: 3rem;
+    margin-left: 13%;
+    padding: 2rem;
+    border: 1px solid #cccccc;
+}
+
+/****************************
+/// PAGE SPECIALITES ///
+****************************/
+
+#speciality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.speciality-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speciality-card {
+    width: 20%;
+    background-color: #d8ecf4;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.specialist-list {
+    display: flex;
+    justify-content: center;
+}
+
+.specialist-card {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    font-weight: bold;
+}
+
+/* Les spécialistes sont sur la même ligne que la spécialité */
+.speciality-card h2,
+.speciality-card h3 {
+    margin: 0;
+}
+
+/* Styles pour les boutons Éditer et Supprimer */
+.speciality-card a,
+.speciality-card button {
+    background-color: #81c5e2;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+.speciality-card a:hover,
+.speciality-card button:hover {
+    color: var(--secondary-color);
+}
+
+.edit-spe-button {
+    font-size: 1.25rem;
+}
+
+.delete-spe-button {
+    font-size: 1.25rem;
+}
+
+.add-spe-button {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.add-spe-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/****************************
+/// SOUS-PAGE ADD SPE ///
+****************************/
+
+.add-spe-card {
+    width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.add-spe-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-spe-card input,
+.add-spe-card select,
+.add-spe-card button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-spe-card button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-spe-card button:hover {
+    background-color: #0056b3;
+}
+
+/****************************
+/// SOUS-PAGE EDIT SPE ///
+****************************/
+
+.edit-spe-card {
+    width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.edit-spe-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.edit-spe-card input,
+.edit-spe-card select,
+.edit-spe-card button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-spe-card button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-spe-card button:hover {
+    background-color: #0056b3;
+}
+
+/****************************
+/// PAGE RENDEZ-VOUS ///
+****************************/
+
+.appointment-container {
+    width: 50rem;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #cccccc;
+}
+
+.appointment-title {
+    font-weight: bold;
+    font-size: 3.8rem;
+}
+
+.send-appointment {
+    margin-top: 1rem;
+}
+
+.select-specialist {
+    padding: 1.3rem;
+}
+
+/****************************
+/// PAGE CONTACT ///
+****************************/
+
+.contact-form-container {
+    max-width: 40rem;
+    margin: auto;
+    padding: 1.6rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    font-size: 4rem;
+}
+
+/****************************
+/// PAGE CARTE ///
+****************************/
+
+.carte-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.map-container {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.hospital-open-timers {
+    flex: 1;
+    border: 1px solid #dddddd;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-open-timers p {
+    font-size: 1.6rem;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    padding-bottom: 5px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.open-timers-card {
+    font-weight: bold;
+}
+
+/****************************
+/// PAGE ERROR ///
+****************************/
+
+.error-page {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,15,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.inexistant-title {
+    padding: 3rem;
+    margin-top: 0;
+}
+
+.back-button {
+    margin-top: 1rem;
+    margin-left: 33.3%;
+    margin-bottom: 10rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,22,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.back-button:hover {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+/****************************
+/// BODY ///
+****************************/
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+h1,
+p {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+aria-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #176785;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid #666666;
+    font-size: 1.6rem;
+}
+
+.password-forgotten {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+/****************************
+/// FOOTER ///
+****************************/
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1.6rem;
+    text-align: center;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/****************************
+/// RESPONSIVE ///
+****************************/
+
+/* CSS pour les écrans de taille strictement supérieure à 768px */
+@media (min-width: 768px) {
+    header {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .add-spe-card {
+        max-width: 75%;
+    }
+
+    .edit-spe-card {
+        max-width: 75%;
+    }
+
+    .carte-container {
+        flex-direction: row;
+    }
+
+    .back-button {
+        margin-left: 45%;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}

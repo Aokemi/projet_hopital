@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "638dd11806c4447cef545434"
+  },
+  "name": "Dentaire",
+  "specialists": [
+    "Dr. Cassandre",
+    "Dr. Elisa"
+  ],
+  "floor": "4"
+},
+{
+  "_id": {
+    "$oid": "638dd11806c4447cef545433"
+  },
+  "name": "Radiologie",
+  "specialists": [
+    "Dr. Thomas",
+    "Dr. Mohammed"
+  ],
+  "floor": "3"
+},
+{
+  "_id": {
+    "$oid": "638dd11806c4447cef545432"
+  },
+  "name": "Dermatologie",
+  "specialists": [
+    "Dr. Asma",
+    "Dr. Julien"
+  ],
+  "floor": "2"
+},
+{
+  "_id": {
+    "$oid": "638dd11806c4447cef545431"
+  },
+  "name": "Médecine générale",
+  "specialists": [
+    "Dr. Eric",
+    "Dr. Rebecca"
+  ],
+  "floor": "1"
+}]

@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "656781fcb0bbc94b670fa4c0"
+  },
+  "date": {
+    "$date": "2023-12-06T00:00:00.000Z"
+  },
+  "startHour": {
+    "$date": "2023-12-06T13:30:00.000Z"
+  },
+  "endHour": {
+    "$date": "2023-12-06T14:00:00.000Z"
+  },
+  "specialist": "Dr. Cassandre",
+  "userId": {
+    "$oid": "653c19a205c3cf7f4d11cc5d"
+  },
+  "createdAt": {
+    "$date": "2023-11-29T18:25:00.639Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-29T18:25:00.639Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656787a3b0bbc94b670fa4d5"
+  },
+  "date": {
+    "$date": "2023-12-09T00:00:00.000Z"
+  },
+  "startHour": {
+    "$date": "2023-12-09T13:25:00.000Z"
+  },
+  "endHour": {
+    "$date": "2023-12-09T13:55:00.000Z"
+  },
+  "specialist": "Dr. Mohammed",
+  "userId": {
+    "$oid": "653c19a205c3cf7f4d11cc5d"
+  },
+  "createdAt": {
+    "$date": "2023-11-29T18:49:07.828Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-29T18:49:07.828Z"
+  },
+  "__v": 0
+}]
