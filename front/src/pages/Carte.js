@@ -6,6 +6,7 @@ const Carte = () => {
             <section className="map-container">
                 <iframe
                     title="map"
+                    className="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20980.18409670513!2d2.3541086791015684!3d48.905426899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66c375e93c1b1%3A0xdf71e95d09e08d98!2sPolyclinique%20d&#39;Aubervilliers!5e0!3m2!1sfr!2sfr!4v1697104524785!5m2!1sfr!2sfr"
                     width="600"
                     height="450"
